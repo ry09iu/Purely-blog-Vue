@@ -1,13 +1,45 @@
 <template>
-  <div>文档列表</div>
+  <el-container>
+    <el-main>
+      <div
+        class="archives-container"
+        v-for="list in archivesList"
+        :key="list.id"
+      >
+        <p class="year">{{ list.year }}</p>
+        <div class="archives" v-for="item in list.list" :key="item.id">
+          <a href="#">{{ item.title }}</a>
+          <p class="date">{{ item.createTime.split(" ")[0] }}</p>
+        </div>
+      </div>
+    </el-main>
+  </el-container>
 </template>
 <script>
+import mockData from "../../../data/archives.js";
 export default {
   name: "Archives",
   components: {},
   props: [],
   data() {
-    return {};
+    return {
+      archivesList: []
+    };
+  },
+  created() {
+    const { archivesList } = mockData;
+    let list = [
+      {
+        id: 1,
+        year: "2020",
+        list: archivesList.data.list
+      }
+    ];
+    console.log(list);
+    this.archivesList = list;
   }
 };
 </script>
+<style lang="scss" scoped>
+@import "./style.scss";
+</style>

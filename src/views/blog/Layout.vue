@@ -46,7 +46,7 @@ export default {
 }
 
 .header {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
 
 .header-container {
@@ -56,6 +56,10 @@ export default {
   height: 84px;
   width: 100%;
   color: #313131;
+
+  .nav-logo {
+    color: #515151;
+  }
 
   .nav-menu a {
     margin: 0 14px;
@@ -78,9 +82,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   height: 84px;
   width: 100%;
   font-size: 0.5rem;

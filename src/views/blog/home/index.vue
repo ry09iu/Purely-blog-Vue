@@ -1,21 +1,24 @@
 <template>
   <el-container>
-    <el-main>
-      <div class="archives" v-for="item in archivesList" :key="item.id">
-        <div class="archives-header">
+    <div v-if="postList.length > 0">
+      <div class="post" v-for="item in postList" :key="item.id">
+        <div class="post-header">
           <a href="#">{{ item.title }}</a>
         </div>
-        <div class="archives-content">
+        <div class="post-content">
           <p v-html="item.des" />
         </div>
-        <div class="archives-footer">
+        <div class="post-footer">
           <i class="el-icon-date"></i>
           <p>{{ item.createTime }}</p>
           <i class="el-icon-price-tag"></i>
-          <p>{{ item.category.name }}</p>
+          <a class="category-link">{{ item.category.name }}</a>
         </div>
       </div>
-    </el-main>
+    </div>
+    <div class="non-post" v-else>
+      <p>暂未发布文章</p>
+    </div>
   </el-container>
 </template>
 <script>
@@ -26,12 +29,12 @@ export default {
   props: [],
   data() {
     return {
-      archivesList: []
+      postList: []
     };
   },
   created() {
     const { archivesList } = mockData;
-    this.archivesList = archivesList.data.list;
+    this.postList = archivesList.data.list;
   }
 };
 </script>

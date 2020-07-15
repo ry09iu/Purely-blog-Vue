@@ -1,0 +1,50 @@
+.el-container {
+  padding: 20px 0 0;
+}
+
+.archives-container {
+  padding: 12px 6px;
+
+  .year {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #414141;
+  }
+}
+
+.archives {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f2f2f2;
+
+  a {
+    display: inline-block;
+    margin-top: 20px;
+
+    &:link,
+    &:visited {
+      color: #616161;
+    }
+  }
+
+  .date {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #a1a1a1;
+  }
+
+  &:first-of-type {
+    margin-top: 15px;
+  }
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.el-card {
+  border: none;
+}
+
+.el-card.is-always-shadow {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.06);
+}
