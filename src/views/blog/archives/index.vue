@@ -1,5 +1,5 @@
 <template>
-  <el-container>
+  <div class="main-container">
     <div class="archives-container" v-for="list in archivesList" :key="list.id">
       <p class="year">{{ list.year }}</p>
       <div class="archives" v-for="item in list.list" :key="item.id">
@@ -7,7 +7,7 @@
         <p class="date">{{ item.createTime.split(" ")[0] }}</p>
       </div>
     </div>
-  </el-container>
+  </div>
 </template>
 <script>
 import mockData from "../../../data/archives.js";

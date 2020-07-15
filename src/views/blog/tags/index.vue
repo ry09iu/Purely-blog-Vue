@@ -1,7 +1,11 @@
 <template>
   <el-container>
     <div class="tags-wrap" v-for="item in tagsList" :key="item.id">
-      <a class="tags">{{ item.name }}</a>
+      <!-- <a class="tags">{{ item.name }}</a> -->
+      <el-tag
+        :type="tagTypeArray[Math.floor(Math.random() * tagTypeArray.length)]"
+        >{{ item.name }}</el-tag
+      >
     </div>
   </el-container>
 </template>
@@ -12,6 +16,8 @@ export default {
   props: [],
   data() {
     return {
+      tagType: "primary",
+      tagTypeArray: ["primary", "success", "info", "warning", "danger"],
       tagsList: [
         {
           id: 1,

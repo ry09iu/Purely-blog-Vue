@@ -1,5 +1,5 @@
 <template>
-  <el-container>
+  <div class="post-container">
     <div v-if="postList.length > 0">
       <div class="post" v-for="item in postList" :key="item.id">
         <div class="post-header">
@@ -19,7 +19,7 @@
     <div class="non-post" v-else>
       <p>暂未发布文章</p>
     </div>
-  </el-container>
+  </div>
 </template>
 <script>
 import mockData from "../../../data/archives.js";
