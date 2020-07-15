@@ -13,6 +13,10 @@
     color: #666;
     border: 1px solid #ddd;
     font-size: 13px;
+
+    &:hover {
+      color: #000;
+    }
   }
 }
 
