@@ -3,7 +3,7 @@
 }
 
 .archives-container {
-  padding: 12px 6px;
+  margin-top: 29px;
 
   .year {
     font-size: 20px;
@@ -23,6 +23,10 @@
     &:link,
     &:visited {
       color: #616161;
+    }
+
+    &:hover {
+      color: #f56c6c;
     }
   }
 

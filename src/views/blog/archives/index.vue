@@ -1,18 +1,12 @@
 <template>
   <el-container>
-    <el-main>
-      <div
-        class="archives-container"
-        v-for="list in archivesList"
-        :key="list.id"
-      >
-        <p class="year">{{ list.year }}</p>
-        <div class="archives" v-for="item in list.list" :key="item.id">
-          <a href="#">{{ item.title }}</a>
-          <p class="date">{{ item.createTime.split(" ")[0] }}</p>
-        </div>
+    <div class="archives-container" v-for="list in archivesList" :key="list.id">
+      <p class="year">{{ list.year }}</p>
+      <div class="archives" v-for="item in list.list" :key="item.id">
+        <router-link :to="'/detail/' + item.id">{{ item.title }}</router-link>
+        <p class="date">{{ item.createTime.split(" ")[0] }}</p>
       </div>
-    </el-main>
+    </div>
   </el-container>
 </template>
 <script>
@@ -35,7 +29,6 @@ export default {
         list: archivesList.data.list
       }
     ];
-    console.log(list);
     this.archivesList = list;
   }
 };

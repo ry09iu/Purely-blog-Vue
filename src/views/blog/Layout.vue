@@ -4,7 +4,7 @@
       <el-row type="flex" justify="center" align="middle">
         <el-col :span="20" :lg="12">
           <div class="header-container">
-            <div class="nav-logo">
+            <div class="nav-logo" @click="goHome">
               <h3>Purely Blog</h3>
             </div>
             <div class="nav-menu">
@@ -37,6 +37,11 @@ export default {
   props: [],
   data() {
     return {};
+  },
+  methods: {
+    goHome() {
+      this.$router.push("/");
+    }
   }
 };
 </script>
@@ -59,6 +64,7 @@ export default {
 
   .nav-logo {
     color: #515151;
+    cursor: pointer;
   }
 
   .nav-menu a {
@@ -82,10 +88,10 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 84px;
+  margin-top: 60px;
+  height: 108px;
   width: 100%;
-  font-size: 0.5rem;
+  font-size: 12px;
   color: #888;
-  //   background: #f3f6ff;
 }
 </style>

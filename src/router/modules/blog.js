@@ -5,13 +5,14 @@
 import Layout from '@/views/blog/Layout';
 import Home from '@/views/blog/home';
 import Archives from '@/views/blog/archives';
+import Detail from '@/views/blog/detail';
 import Tags from '@/views/blog/tags';
 import About from '@/views/blog/about';
 
 const BlogRouter = [
     {
         path: '/',
-        name: 'Home',
+        name: '',
         hidden: true,
         component: Layout,
         children: [{
@@ -22,6 +23,10 @@ const BlogRouter = [
             path: '/archives',
             name: 'Archives',
             component: Archives
+        }, {
+            path: '/detail/:id(\\d+)',
+            name: 'Detail',
+            component: Detail
         }, {
             path: '/tags',
             name: 'Tags',

@@ -3,7 +3,7 @@
     <div v-if="postList.length > 0">
       <div class="post" v-for="item in postList" :key="item.id">
         <div class="post-header">
-          <a href="#">{{ item.title }}</a>
+          <router-link :to="'/detail/' + item.id">{{ item.title }}</router-link>
         </div>
         <div class="post-content">
           <p v-html="item.des" />

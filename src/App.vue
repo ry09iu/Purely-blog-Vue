@@ -12,6 +12,8 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
+  overflow: scroll;
 }
 
 #app {
@@ -24,5 +26,32 @@ html {
 a {
   text-decoration: none;
   cursor: pointer;
+
+  &:link,
+  &:visited {
+    font-weight: normal;
+    color: #f56c6c;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background: #ededed;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1px;
+}
+
+pre {
+  padding: 16px;
+  margin: 16px 0;
+  background: #f8f8f8 !important;
+  color: #657b83;
 }
 </style>
