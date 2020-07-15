@@ -1,6 +1,6 @@
 <template>
-  <div class="main">
-    <header>
+  <div class="container">
+    <div class="header">
       <el-row type="flex" justify="center" align="middle">
         <el-col :span="20" :lg="12">
           <div class="header-container">
@@ -16,19 +16,19 @@
           </div>
         </el-col>
       </el-row>
-    </header>
+    </div>
 
     <div class="content">
       <el-row type="flex" justify="center" align="middle">
-        <el-col :span="20" :lg="12">
+        <el-col :span="20" :lg="14">
           <router-view />
         </el-col>
       </el-row>
     </div>
 
-    <footer>
+    <div class="footer">
       <p>© Purely Blog 2020, Powered by Ry09iu.</p>
-    </footer>
+    </div>
   </div>
 </template>
 <script>
@@ -41,11 +41,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.main {
+.container {
   margin: 0 auto;
 }
 
-header {
+.header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -74,7 +74,7 @@ header {
   }
 }
 
-footer {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;

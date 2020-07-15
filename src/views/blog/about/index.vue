@@ -1,5 +1,5 @@
 <template>
-  <div>关于页面</div>
+  <div class="container"><p>欢迎来到我的小站呀，很高兴遇见你！🤝</p></div>
 </template>
 <script>
 export default {
@@ -11,3 +11,13 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+.container {
+  padding: 80px;
+
+  p {
+    font-size: 14px;
+    color: #616161;
+  }
+}
+</style>
