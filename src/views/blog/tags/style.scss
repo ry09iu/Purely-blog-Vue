@@ -1,0 +1,22 @@
+.el-container {
+  padding: 80px 0;
+}
+
+.tags-wrap {
+  margin: 4px;
+
+  .tags {
+    display: inline-block;
+    margin: 0 8px 8px 0;
+    padding: 5px 13px;
+    border-radius: 3px;
+    color: #666;
+    border: 1px solid #ddd;
+    font-size: 13px;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}

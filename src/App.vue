@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+html {
+    font-size: 16px;
+}
+
 #app {
   font-family: "Hiragino Sans GB", "Microsoft YaHei", STHeiti, "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

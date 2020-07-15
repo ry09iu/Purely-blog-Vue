@@ -2,7 +2,7 @@
   <div class="main">
     <header>
       <el-row type="flex" justify="center" align="middle">
-        <el-col :span="20" :lg="16">
+        <el-col :span="20" :lg="12">
           <div class="header-container">
             <div class="nav-logo">
               <h3>Purely Blog</h3>
@@ -20,14 +20,14 @@
 
     <div class="content">
       <el-row type="flex" justify="center" align="middle">
-        <el-col :span="20" :lg="16">
+        <el-col :span="20" :lg="12">
           <router-view />
         </el-col>
       </el-row>
     </div>
 
     <footer>
-      <p>Powered by Ry09iu Copyright © 2018-2020 Ry09iu.</p>
+      <p>© Purely Blog 2020, Powered by Ry09iu.</p>
     </footer>
   </div>
 </template>
@@ -83,7 +83,7 @@ footer {
   left: 0;
   height: 84px;
   width: 100%;
-  font-size: 12px;
+  font-size: 0.5rem;
   color: #888;
   //   background: #f3f6ff;
 }
