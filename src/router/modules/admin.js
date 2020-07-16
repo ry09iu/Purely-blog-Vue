@@ -26,21 +26,35 @@ const adminRouter = [
         children: [{
             path: 'add',
             component: () => import('@/views/admin/article/add'),
-            name: 'adminArticleAdd',
-            meta: { title: '发布博文', icon: '' }
+            name: 'Add',
         },
         {
             path: 'edit/:id(\\d+)',
             component: () => import('@/views/admin/article/edit'),
-            name: 'adminArticleEdit',
-            meta: { title: '博文编辑', noCache: true },
-            hidden: true
+            name: 'Edit',
         },
         {
             path: 'list',
             component: () => import('@/views/admin/article/list'),
-            name: 'adminArticleList',
-            meta: { title: '博文列表', icon: '' }
+            name: 'List',
+        }]
+    },
+    {
+        path: '/admin/blog',
+        component: HeaderAside,
+        meta: {
+            title: '博客管理',
+            icon: 'el-icon-menu'
+        },
+        children: [{
+            path: 'tags',
+            component: () => import('@/views/admin/tags/index'),
+            name: 'Tags',
+        },
+        {
+            path: 'category',
+            component: () => import('@/views/admin/category/index'),
+            name: 'Category',
         }]
     }
 ];

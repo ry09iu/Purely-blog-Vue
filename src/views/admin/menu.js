@@ -21,6 +21,21 @@ const asideMenu = [
             },
         ],
     },
+    {
+        path: '/admin/blog',
+        name: '博客管理',
+        icon: 'el-icon-menu',
+        children: [
+            {
+                path: '/tags',
+                name: '标签管理',
+            },
+            {
+                path: '/category',
+                name: '分类管理',
+            },
+        ],
+    }
 ];
 
 export { asideMenu };
