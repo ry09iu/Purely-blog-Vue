@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
-import Layout from '@/views/blog/Layout';
-import BlogRouter from './modules/blog';
+import blogRouter from './modules/blog';
+import adminRouter from './modules/admin';
 
 Vue.use(VueRouter);
 
@@ -15,7 +15,8 @@ const routes = [
         component: () => import('@/views/system/login/index.vue')
     },
 
-    ...BlogRouter
+    ...blogRouter,
+    ...adminRouter
 ];
 
 const router = new VueRouter({

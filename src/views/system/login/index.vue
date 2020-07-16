@@ -10,7 +10,7 @@
         label-width="100px"
       >
         <el-card>
-          <el-row>
+          <el-row class="login-header">
             <h2 v-if="!isLogin">登陆</h2>
             <h2 v-else>注册</h2>
           </el-row>
@@ -50,7 +50,7 @@
               >登录</el-button
             >
           </el-form-item>
-          <el-form-item label-width="0" size="medium">
+          <el-form-item class="login-footer" label-width="0" size="medium">
             <a v-if="isLogin" class="regist-btn" @click="switchBtn"
               >没有账号？去注册</a
             >

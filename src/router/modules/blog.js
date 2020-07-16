@@ -9,7 +9,7 @@ import Detail from '@/views/blog/detail';
 import Tags from '@/views/blog/tags';
 import About from '@/views/blog/about';
 
-const BlogRouter = [
+const blogRouter = [
     {
         path: '/',
         name: '',
@@ -39,4 +39,4 @@ const BlogRouter = [
     },
 ];
 
-export default BlogRouter;
+export default blogRouter;

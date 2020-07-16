@@ -30,23 +30,23 @@ a {
   &:link,
   &:visited {
     font-weight: normal;
-    color: #f56c6c;
+    color: #000; // #f56c6c;
   }
 }
 
-::-webkit-scrollbar {
-  width: 9px;
-  height: 9px;
-}
+// ::-webkit-scrollbar {
+//   width: 9px;
+//   height: 9px;
+// }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 1px;
-  background: #ededed;
-}
+// ::-webkit-scrollbar-thumb {
+//   border-radius: 1px;
+//   background: #ededed;
+// }
 
-::-webkit-scrollbar-track {
-  border-radius: 1px;
-}
+// ::-webkit-scrollbar-track {
+//   border-radius: 1px;
+// }
 
 pre {
   padding: 16px;
